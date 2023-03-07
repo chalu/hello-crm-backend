@@ -1,0 +1,32 @@
+### GET Customers
+GET http://localhost:8080/customers
+
+### GET A Customer
+GET http://localhost:8080/customers/some-customer-id-string
+
+### POST A Customer
+POST http://localhost:8080/customers
+content-type: application/json
+
+{
+    "age": 90,
+    "name": "Someone Else",
+    "email": "lol@gmail.com",
+    "phoneNumber": "54739534534",
+    "address": "Somewhere they call homme"
+}
+
+### Update Customer
+PUT http://localhost:8080/customers/some-customer-id-string
+content-type: application/json
+
+{
+    "age": 40,
+    "name": "Emmanuel Odili",
+    "email": "chucks@gmail.com",
+    "address": "Abuja, Nigeria",
+    "phoneNumber": "4039217290"
+}
+
+### Delete A Customer
+DELETE http://localhost:8080/customers/some-customer-id-string
