@@ -18,6 +18,7 @@ Users will be able to retrieve (`GET`), create (`POST`), update (`PUT`), and del
 {
     "age": 90,
     "name": "Someone Else",
+    "contacted": true,
     "email": "lol@gmail.com",
     "phoneNumber": "54739534534",
     "address": "Somewhere they call homme"
