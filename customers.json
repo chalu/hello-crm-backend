@@ -1,0 +1,38 @@
+{
+	"2f8b5006-90d5-4646-a294-4fd8090f5aae": {
+		"id": "2f8b5006-90d5-4646-a294-4fd8090f5aae",
+		"age": 33,
+		"name": "Olivia Nwosu",
+		"email": "o_nwosu@gmail.com",
+		"address": "46 Edgemount Blvd, NW, Calgary",
+		"contacted": true,
+		"phoneNumber": "5324298794"
+	},
+	"4062ab8e-92cf-4977-8d84-06cba75dfe06": {
+		"id": "4062ab8e-92cf-4977-8d84-06cba75dfe06",
+		"age": 35,
+		"name": "Hamilton Ogene",
+		"email": "h.ogene@gmail.com",
+		"address": "30 Edith Way, Glacier Ridge, NW, Calgary",
+		"contacted": false,
+		"phoneNumber": "5024598764"
+	},
+	"e49af6f1-5e8b-40f6-b441-04c2220074a2": {
+		"id": "e49af6f1-5e8b-40f6-b441-04c2220074a2",
+		"age": 30,
+		"name": "Zoey Owolabi",
+		"email": "zoey@gmail.com",
+		"address": "100 Sage Hill Crest, NW, Calgary",
+		"contacted": true,
+		"phoneNumber": "54739534534"
+	},
+	"fab93bfb-9571-471f-83bf-285fb3597645": {
+		"id": "fab93bfb-9571-471f-83bf-285fb3597645",
+		"age": 42,
+		"name": "Charles Odili",
+		"email": "chaluwa@gmail.com",
+		"address": "250 Lake Hill, Glacier Ridge NW",
+		"contacted": false,
+		"phoneNumber": "4039217290"
+	}
+}

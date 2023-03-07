@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/chalu/hello-crm-backend/controller"
@@ -16,11 +17,15 @@ var (
 func main() {
 	server := gin.Default()
 
-	// setup default 404 handler
-	server.NoRoute(func(c *gin.Context) {
-		c.JSON(http.StatusNotFound, gin.H{
-			"code":    "PAGE_NOT_FOUND",
-			"message": "Page not found",
+	// default home route
+	server.GET("/", func(ctx *gin.Context) {
+		routes := []string{}
+		for _, r := range server.Routes() {
+			routes = append(routes, fmt.Sprintf("%v : %v", r.Method, r.Path))
+		}
+		ctx.JSON(http.StatusOK, gin.H{
+			"message": "Welcome to the Simple CRM backend API built with GO. Below are the available endpoints you can call with this API",
+			"routes":  routes,
 		})
 	})
 
@@ -60,6 +65,14 @@ func main() {
 			status = http.StatusBadRequest
 		}
 		ctx.JSON(status, custId)
+	})
+
+	// default 404 route
+	server.NoRoute(func(c *gin.Context) {
+		c.JSON(http.StatusNotFound, gin.H{
+			"code":    "PAGE_NOT_FOUND",
+			"message": "Page not found",
+		})
 	})
 
 	server.Run(":8080")
